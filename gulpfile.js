@@ -11,7 +11,7 @@ var sass = require('gulp-sass')(require('sass')); // переводит SASS в 
     browserSync = require('browser-sync');
 
 gulp.task('pug', function buildHTML() {
-  return gulp.src(['src/pages/*.pug', 'src/elements/***/**/*.pug', 'src/components/***/**/*.pug'])
+  return gulp.src('src/pages/*.pug')
   .pipe(pug({
       doctype: 'html',
       pretty: true
@@ -69,6 +69,8 @@ gulp.task("myserv", function myServer() {
 
 gulp.task("watch", function() {
     gulp.watch("src/blocks/**/*.pug", gulp.series("pug"));
+    gulp.watch("src/elements/***/**/*.pug", gulp.series("pug"));
+    gulp.watch("src/components/**/*.pug", gulp.series("pug"));
     gulp.watch("src/pages/*.pug", gulp.series("pug"));
     gulp.watch("src/js/*.js", gulp.series("scripts"));
     gulp.watch(['src/sass/*.sass','src/blocks/**/*.sass', 'src/pages/**/*.sass', 'src/elements/**/*.sass'], gulp.series("sass"));

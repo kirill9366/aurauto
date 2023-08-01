@@ -1,0 +1,11 @@
+#marks
+  h2 Марки новых авто
+  .marks__list
+    - for (var i = 1; i < 17; ++i)
+      img.marks__mark_img(src='../images/mark_' + i + '.png')
+
+  .marks__items
+    - for (var i = 1; i < 13; ++i)
+      .marks__item
+        img.marks__item_img(src='../images/mark_icon' + i + '.png')
+        p.marks__item_p Легковые авто
