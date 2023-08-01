@@ -1,13 +1,6 @@
 #marks {
-  padding: 0 80px;
   width: 100%;
   margin: 43px 0;
-}
-
-@media (max-width: 1000px) {
-  #marks {
-    padding: 0 10px;
-  }
 }
 
 .marks__list {

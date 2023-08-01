@@ -1,0 +1,27 @@
+.country {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1240px) {
+  .country {
+    display: none;
+  }
+}
+
+.country__icon {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+}
+
+.country__p {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 14px;
+}

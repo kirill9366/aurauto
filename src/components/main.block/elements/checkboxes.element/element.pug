@@ -1,0 +1,24 @@
+mixin checkbox(name, text)
+  .main__checkbox_container
+    input.main__checkbox(
+      type="checkbox"
+      id= name
+    )
+    label.hidden_1000.main__checkbox_label(for= name)
+      span= text
+  
+mixin radio(name, text, option)
+  .main__checkbox_container
+    input.main__radio(
+      type="radio"
+      name= option
+      id= name
+    )
+    label.main__checkbox_label(for= name)
+      span= text
+
+.main__checkboxes
+  + radio("all_auto", "Все авто", "auto")
+  + radio("new", "Новые авто", "auto")
+  + radio("probeg", "С пробегом", "auto")
+  + checkbox("all_country", "Все страны")

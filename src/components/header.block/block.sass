@@ -1,25 +1,25 @@
 .header__bottom
-  @media (max-width: 1000px)
+  @media (max-width: 1240px)
     display: flex
     flex-direction: column-reverse
 
 .header__empty
-  @media (max-width: 1000px)
+  @media (max-width: 1240px)
     display: none
 
 .header__items
+  background: #EF7820
+
+  @media (max-width: 1240px)
+    background: none
+
+.header__items_inner
   display: flex
   justify-content: space-between
   align-items: center
-  background: #EF7820
   min-height: 48px
-  padding: 0 80px
 
-  @media (max-width: 1300px)
-    padding: 0px 10px
-
-  @media (max-width: 1000px)
-    background: none
+  @media (max-width: 1240px)
     flex-wrap: wrap
 
 .header__item
@@ -34,7 +34,7 @@
   font-weight: 400
   line-height: normal
 
-  @media (max-width: 1000px)
+  @media (max-width: 1240px)
     display: flex
     flex-direction: column
     justify-content: center
@@ -52,15 +52,11 @@
     padding: 15px
     border-radius: 6px
 
-.header__list
+.header__list_inner
   display: flex
   justify-content: space-between
   align-items: center
   min-height: 98px
-  padding: 0 80px
 
-  @media (max-width: 1300px)
-    padding: 0px 10px
-
-  @media (max-width: 1000px)
+  @media (max-width: 1240px)
     flex-wrap: wrap

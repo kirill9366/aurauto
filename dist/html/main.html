@@ -3,41 +3,44 @@
   <head>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title></title>
   </head>
   <body>
     <header>
       <div class="ad"><img class="ad__img" src="../images/ad.png"></div>
       <div class="header__bottom">
-        <ol class="header__items">
-          <div class="header__empty"></div>
-          <div class="header__empty"></div>
-          <div class="header__empty"></div>
-              <li class="header__item"><a class="header__link" href="href">Сервисы и ТО</a></li>
-              <li class="header__item"><a class="header__link" href="href">Авто с пробегом</a></li>
-              <li class="header__item"><a class="header__link" href="href">Юр. лицам и ИП</a></li>
-              <li class="header__item"><a class="header__link" href="href">Сотрудничество</a></li>
-          <div class="country"><img class="country__icon" src="../images/country.png">
-            <p class="country__p">Ваша страна</p>
-          </div>
-        </ol>
+        <div class="header__items">
+          <ol class="header__items_inner block_inner">
+            <div class="header__empty"></div>
+            <div class="header__empty"></div>
+            <div class="header__empty"></div>
+                <li class="header__item"><a class="header__link" href="href">Сервисы и ТО</a></li>
+                <li class="header__item"><a class="header__link" href="href">Авто с пробегом</a></li>
+                <li class="header__item"><a class="header__link" href="href">Юр. лицам и ИП</a></li>
+                <li class="header__item"><a class="header__link" href="href">Сотрудничество</a></li>
+            <div class="country"><img class="country__icon" src="../images/country.png">
+              <p class="country__p">Ваша страна</p>
+            </div>
+          </ol>
+        </div>
         <div class="header__list">
-                    <div class="logo">
-                      <p class="logo__p">aur</p><span class="logo__span">auto</span>
-                    </div>
-          <div class="category"><img class="category__img" src="../images/category.png">
-            <p class="category__p">Все категории</p>
+          <div class="header__list_inner block_inner">
+                        <div class="logo">
+                          <p class="logo__p">aur</p><span class="logo__span">auto</span>
+                        </div>
+            <div class="category"><img class="category__img" src="../images/category.png">
+              <p class="category__p">Все категории</p>
+            </div>
+            <div class="search">
+              <input class="search__input" placeholder="Поиск по объявлениям"><a class="search__button" href="#">Найти</a>
+            </div>
+            <div class="auth hidden_1240"><a class="auth__button" href="#">Авторизация</a></div>
           </div>
-          <div class="search">
-            <input class="search__input" placeholder="Поиск по объявлениям"><a class="search__button" href="#">Найти</a>
-          </div>
-          <div class="auth"><a class="auth__button" href="#">Авторизация</a></div>
         </div>
       </div>
     </header>
     <div class="content">
-      <div id="marks">
+      <div class="block_inner" id="marks">
         <h2>Марки новых авто</h2>
         <div class="marks__list"><img class="marks__mark_img" src="../images/mark_1.png"><img class="marks__mark_img" src="../images/mark_2.png"><img class="marks__mark_img" src="../images/mark_3.png"><img class="marks__mark_img" src="../images/mark_4.png"><img class="marks__mark_img" src="../images/mark_5.png"><img class="marks__mark_img" src="../images/mark_6.png"><img class="marks__mark_img" src="../images/mark_7.png"><img class="marks__mark_img" src="../images/mark_8.png"><img class="marks__mark_img" src="../images/mark_9.png"><img class="marks__mark_img" src="../images/mark_10.png"><img class="marks__mark_img" src="../images/mark_11.png"><img class="marks__mark_img" src="../images/mark_12.png"><img class="marks__mark_img" src="../images/mark_13.png"><img class="marks__mark_img" src="../images/mark_14.png"><img class="marks__mark_img" src="../images/mark_15.png"><img class="marks__mark_img" src="../images/mark_16.png">
         </div>
@@ -81,48 +84,138 @@
         </div>
       </div>
       <div id="maintenance">
-        <div class="maintenance__container">
+        <div class="maintenance__container block_inner">
           <p class="maintenance__title">Техобслуживание со скидкой до 60%</p>
           <p class="maintenance__text">Экономия до 50 000 Р на обслуживание авто. Сравните цены и<br>выберите лучшее предложение.</p>
           <div class="maintenance__list">
-            <select class="maintenance__select">
+            <select class="maintenance__select select">
               <option class="maintenance__option">Марка</option>
             </select>
-            <select class="maintenance__select">
+            <select class="maintenance__select select">
               <option class="maintenance__option">Марка</option>
             </select>
-            <select class="maintenance__select">
+            <select class="maintenance__select select">
               <option class="maintenance__option">Марка</option>
             </select>
-            <select class="maintenance__select">
+            <select class="maintenance__select select">
               <option class="maintenance__option">Марка</option>
             </select>
-            <select class="maintenance__select">
+            <select class="maintenance__select select">
               <option class="maintenance__option">Марка</option>
             </select>
             <button class="maintenance__button">Показать 1377 сервисов</button>
           </div>
         </div>
       </div>
+      <div class="block_inner" id="advantages">
+        <h2>Преимущества <span class="advantages__span">AUR</span><span>AUTO</span></h2>
+        <div class="advantages__items">
+          <div class="advantages__item"><img class="advantages__img" src="../images/advantages_car.png">
+            <p class="advantages__p">36 923 авто в наличии от официальных дилеров</p>
+          </div>
+          <div class="advantages__item"><img class="advantages__img" src="../images/advantages_search.png">
+            <p class="advantages__p">Персональный подбор предложений на авто с дополнительной скидкой</p>
+          </div>
+          <div class="advantages__item"><img class="advantages__img" src="../images/advantages_price.png">
+            <p class="advantages__p">Реальные цены и скидки мы получаем напрямую от дилеров</p>
+          </div>
+          <div class="advantages__item"><img class="advantages__img" src="../images/advantages_info.png">
+            <p class="advantages__p">Вся информация есть у нас — вам не надо ехать к дилерам</p>
+          </div>
+        </div>
+      </div>
+      <div class="block_inner" id="main">
+        <h1>Быстро выбрать и выгодно купить<br>авто от официального дилера</h1>
+        <div class="main__p">Найдите самые выгодные цены на покупку, обслуживание и ремонт авто</div>
+        <div class="main__list">
+          <div class="main__checkboxes">
+                      <div class="main__checkbox_container">
+                        <input class="main__radio" type="radio" name="auto" id="all_auto">
+                        <label class="main__checkbox_label" for="all_auto"><span>Все авто</span></label>
+                      </div>
+                      <div class="main__checkbox_container">
+                        <input class="main__radio" type="radio" name="auto" id="new">
+                        <label class="main__checkbox_label" for="new"><span>Новые авто</span></label>
+                      </div>
+                      <div class="main__checkbox_container">
+                        <input class="main__radio" type="radio" name="auto" id="probeg">
+                        <label class="main__checkbox_label" for="probeg"><span>С пробегом</span></label>
+                      </div>
+                      <div class="main__checkbox_container">
+                        <input class="main__checkbox" type="checkbox" id="all_country">
+                        <label class="hidden_1000 main__checkbox_label" for="all_country"><span>Все страны</span></label>
+                      </div>
+          </div>
+          <div class="main__countries"><img class="main__country_img" src="../images/country1.png"><img class="main__country_img" src="../images/country2.png"><img class="main__country_img" src="../images/country3.png"><img class="main__country_img" src="../images/country4.png">
+          </div>
+        </div>
+        <div class="main__input_group">
+          <div class="main__square">
+                    <select class="main__input_item select">
+                      <option class="main__option">Модель</option>
+                    </select>
+                    <select class="main__input_item select">
+                      <option class="main__option">Марка</option>
+                    </select>
+            <div class="main__input_item">
+              <input class="main__input"><span>Цена от, р.</span>
+            </div>
+            <div class="main__input_item">
+              <input class="main__input"><span>До</span>
+            </div>
+          </div>
+          <div class="main__square">
+                    <select class="main__input_item select">
+                      <option class="main__option">Модель</option>
+                    </select>
+                    <select class="main__input_item select">
+                      <option class="main__option">Марка</option>
+                    </select>
+            <div class="main__input_item">
+              <input class="main__input"><span>Цена от, р.</span>
+            </div>
+            <div class="main__input_item">
+              <input class="main__input"><span>До</span>
+            </div>
+          </div>
+          <div class="main__square">
+                    <select class="main__input_item select">
+                      <option class="main__option">Модель</option>
+                    </select>
+                    <select class="main__input_item select">
+                      <option class="main__option">Марка</option>
+                    </select>
+            <div class="main__input_item">
+              <input class="main__input"><span>Цена от, р.</span>
+            </div>
+            <div class="main__input_item">
+              <input class="main__input"><span>До</span>
+            </div>
+          </div>
+        </div>
+        <button class="main__button">Показать 1377 авто</button>
+      </div>
     </div>
     <footer>
-      <div class="footer__list">
-                <div class="logo">
-                  <p class="logo__p">aur</p><span class="logo_theme_white logo__span">auto</span>
-                </div>
-        <p class="footer__p">Политика конфиденциальности<br>2023 ©Все права защищены</p>
-      </div>
-      <ul class="footer__ul">
-        <li class="footer__li">О сайте</li>
-        <li class="footer__li">Стать партнером</li>
-        <li class="footer__li">Помощь</li>
-      </ul>
-      <div class="footer__list"><img class="footer__img" src="../images/google_play.png"><img class="footer__img" src="../images/app_store.png"></div>
-      <div class="footer__list">
-        <div class="footer__p">Нужна помощь? Закажите бесплатную консультацию наших специалистов.Перезвоним через 15 минут.</div>
-        <div class="footer__search">
-          <input class="footer__search__input" placeholder="+7 (930) 900 - 131 - 22 - 12">
-          <button class="footer__search__button"><img class="footer__search__img" src="../images/search.png"></button>
+      <div class="footer__inner block_inner">
+        <div class="footer__list">
+                    <div class="logo">
+                      <p class="logo__p">aur</p><span class="logo_theme_white logo__span">auto</span>
+                    </div>
+          <p class="footer__p">Политика конфиденциальности<br>2023 ©Все права защищены</p>
+        </div>
+        <ul class="footer__ul">
+          <li class="footer__li">О сайте</li>
+          <li class="footer__li">Стать партнером</li>
+          <li class="footer__li">Помощь</li>
+        </ul>
+        <div class="footer__list"><img class="footer__img" src="../images/google_play.png"><img class="footer__img" src="../images/app_store.png"></div>
+        <div class="footer__list">
+          <div class="footer__p">Нужна помощь? Закажите бесплатную консультацию наших специалистов.Перезвоним через 15 минут.</div>
+          <div class="footer__search">
+            <input class="footer__search__input" placeholder="+7 (930) 900 - 131 - 22 - 12">
+            <button class="footer__search__button"><img class="footer__search__img" src="../images/search.png"></button>
+          </div>
         </div>
       </div>
     </footer>

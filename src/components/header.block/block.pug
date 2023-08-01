@@ -5,18 +5,20 @@ mixin link(name, link)
 header
   include ../ad.block/block.pug
   .header__bottom
-    ol.header__items
-      .header__empty
-      .header__empty
-      .header__empty
-      +link('Сервисы и ТО', 'href')
-      +link('Авто с пробегом', 'href')
-      +link('Юр. лицам и ИП', 'href')
-      +link('Сотрудничество', 'href')
-      include elements/country.element/element.pug
+    .header__items
+      ol.header__items_inner.block_inner
+        .header__empty
+        .header__empty
+        .header__empty
+        +link('Сервисы и ТО', 'href')
+        +link('Авто с пробегом', 'href')
+        +link('Юр. лицам и ИП', 'href')
+        +link('Сотрудничество', 'href')
+        include elements/country.element/element.pug
     .header__list
-      include ../../elements/logo.element/element.pug
-      +logo(false)
-      include elements/category.element/element.pug
-      include elements/search.element/element.pug
-      include elements/auth.element/element.pug
+      .header__list_inner.block_inner
+        include ../../elements/logo.element/element.pug
+        +logo(false)
+        include elements/category.element/element.pug
+        include elements/search.element/element.pug
+        include elements/auth.element/element.pug

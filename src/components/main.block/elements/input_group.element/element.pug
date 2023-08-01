@@ -1,0 +1,15 @@
+mixin select(title)
+  select.main__input_item.select
+    option.main__option= title
+
+.main__input_group
+  - for(var i = 0; i < 3; i++)
+    .main__square
+      +select("Модель")
+      +select("Марка")
+      .main__input_item
+        input.main__input
+        span Цена от, р.
+      .main__input_item
+        input.main__input
+        span До

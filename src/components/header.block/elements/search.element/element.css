@@ -3,7 +3,7 @@
   height: 56px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1240px) {
   .search {
     margin-top: 18px;
     width: 100%;
@@ -26,7 +26,7 @@
   line-height: normal;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1240px) {
   .search__input {
     width: calc(100% - 131px);
   }
