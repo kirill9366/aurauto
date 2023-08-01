@@ -11,7 +11,7 @@ var sass = require('gulp-sass')(require('sass')); // переводит SASS в 
     browserSync = require('browser-sync');
 
 gulp.task('pug', function buildHTML() {
-  return gulp.src('src/pages/*.pug')
+  return gulp.src(['src/pages/*.pug', 'src/elements/***/**/*.pug', 'src/components/***/**/*.pug'])
   .pipe(pug({
       doctype: 'html',
       pretty: true

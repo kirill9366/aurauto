@@ -17,8 +17,10 @@ html(lang="ru")
     )
     title
   body
+    include ../components/header.block/block.pug
     .content
       block content
+    include ../components/footer.block/block.pug
   script(
     type='text/javascript'
     src='../js/scripts.min.js'
