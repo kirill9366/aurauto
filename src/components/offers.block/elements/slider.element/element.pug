@@ -1,0 +1,8 @@
+.slider.offers__slider#slider__offers
+  .slider__container
+    include ../card.element/element.pug
+    - for(var i = 1; i < 5; i++)
+      .slider__item
+        +card(i)
+      .slider__item
+        +card("1")
