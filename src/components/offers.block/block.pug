@@ -1,9 +1,19 @@
-#offers.block_inner
-  .offers__header
-    p.offers__title.show_1000 Лучшие предложения
-    .offers__arrows
-      img.slider__arrow_left#slider__offers(src="../images/slider_arrow_left.png")
-      img.slider__arrow_right#slider__offers(src="../images/slider_arrow_right.png")
-    p.offers__title.hidden_1000 Лучшие предложения
-    a.offers__button(href="#") Смотреть все
-  include elements/slider.element/element.pug
+mixin offer_block(title, slider_title, hidden= "")
+  #offers.block_inner
+    .offers__header
+      p.offers__title.show_1000= title
+        span.hidden_1000= hidden
+      .offers__arrows
+        img.slider__arrow_left(
+          src="../images/slider_arrow_left.png"
+          id= slider_title
+        )
+        img.slider__arrow_right(
+          src="../images/slider_arrow_right.png"
+          id= slider_title
+        )
+      p.offers__title.hidden_1000= title
+        span= hidden
+      a.offers__button(href="#") Смотреть все
+    include elements/slider.element/element.pug
+    +sidebar(slider_title)

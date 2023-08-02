@@ -3,22 +3,24 @@ mixin checkbox(name, text)
     input.main__checkbox(
       type="checkbox"
       id= name
+      checked
     )
     label.hidden_1000.main__checkbox_label(for= name)
       span= text
   
-mixin radio(name, text, option)
+mixin radio(name, text, option, checked)
   .main__checkbox_container
     input.main__radio(
       type="radio"
       name= option
       id= name
+      checked= checked
     )
     label.main__checkbox_label(for= name)
       span= text
 
 .main__checkboxes
-  + radio("all_auto", "Все авто", "auto")
-  + radio("new", "Новые авто", "auto")
-  + radio("probeg", "С пробегом", "auto")
+  + radio("all_auto", "Все авто", "auto", true)
+  + radio("new", "Новые авто", "auto", false)
+  + radio("probeg", "С пробегом", "auto", false)
   + checkbox("all_country", "Все страны")

@@ -1,7 +1,8 @@
 .slider.partners__slider#slider__partners
   img.slider__arrow_left.hidden_1000#slider__partners(src="../images/slider_arrow_left.png")
   .slider__container
-    - for(var i = 1; i < 7; i++)
-      .slider__item
-        img.partners__img(src='../images/partners_brand' + i + '.png')
+    -for (var b = 0; b < 2; b++)
+      - for(var i = 1; i < 7; i++)
+        .slider__item
+          img.partners__img(src='../images/partners_brand' + i + '.png')
   img.slider__arrow_right.hidden_1000#slider__partners(src="../images/slider_arrow_right.png")

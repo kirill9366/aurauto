@@ -1,15 +1,25 @@
 mixin select(title)
   select.main__input_item.select
     option.main__option= title
+  
+mixin input(text, value= "")
+  .main__input_item
+    input.main__input(value= value)
+    span= text
 
 .main__input_group
-  - for(var i = 0; i < 3; i++)
-    .main__square
-      +select("Модель")
-      +select("Марка")
-      .main__input_item
-        input.main__input
-        span Цена от, р.
-      .main__input_item
-        input.main__input
-        span До
+  .main__square
+    +select("Модель")
+    +select("Марка")
+    +input("Цена от, р.", "300 000")
+    +input("До", "2 300 000")
+  .main__square
+    +select("Коробка")
+    +select("Привод")
+    +select("Кузов")
+    +select("Цвет")
+  .main__square
+    +select("Двигатель")
+    +input("Объем, л..", "1.4 - 4.6")
+    +input("Мощность л,с.", "80 - 415")
+    +input("Разгон дл 100, с.", "6,8 - 20")

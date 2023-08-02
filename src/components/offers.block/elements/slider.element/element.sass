@@ -3,5 +3,53 @@
   margin: 0 auto
   max-width: 100%
 
+.offers__slider .slider__container .slider__item
+  &:nth-child(1)
+    margin-left: -40%
+
+  &:nth-child(2)
+    margin-left: calc(12% - 140px)
+
+  &:nth-child(3)
+    margin-left: calc(37% - 140px)
+
+  &:nth-child(4)
+    margin-left: calc(63% - 140px)
+
+  &:nth-child(5)
+    margin-left: calc(88% - 140px)
+
+  &:nth-child(6)
+    margin-left: 140%
+
   @media (max-width: 1240px)
-    max-width: 100%
+    &:nth-child(1)
+      margin-left: -40%
+
+    &:nth-child(2)
+      margin-left: calc(15% - 140px)
+
+    &:nth-child(3)
+      margin-left: calc(50% - 140px)
+
+    &:nth-child(4)
+      margin-left: calc(85% - 140px)
+
+    &:nth-child(5)
+      margin-left: 140%
+
+  @media (max-width: 1000px)
+    &:nth-child(1)
+      margin-left: -100%
+
+    &:nth-child(2)
+      margin-left: -100%
+
+    &:nth-child(3)
+      margin-left: calc(50% - 140px)
+
+    &:nth-child(4)
+      margin-left: 140%
+
+    &:nth-child(5)
+      margin-left: 140%

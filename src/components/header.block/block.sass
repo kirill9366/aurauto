@@ -1,7 +1,11 @@
+
 .header__bottom
   @media (max-width: 1240px)
     display: flex
     flex-direction: column-reverse
+
+  @media (max-width: 1000px)
+    margin-top: 26px
 
 .header__empty
   @media (max-width: 1240px)
@@ -24,6 +28,19 @@
 
 .header__item
   list-style: none
+
+  @media (max-width: 1000px)
+    &:nth-child(4)
+      width: 143px
+
+    &:nth-child(5)
+      width: 178px
+
+    &:nth-child(6)
+      width: 178px
+
+    &:nth-child(7)
+      width: 143px
 
 .header__link
   color: #FFF
@@ -51,6 +68,10 @@
     background: #FECD00
     padding: 15px
     border-radius: 6px
+
+  @media (max-width: 1000px)
+    display: block
+    width: 100%
 
 .header__list_inner
   display: flex

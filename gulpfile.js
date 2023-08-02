@@ -21,7 +21,7 @@ gulp.task('pug', function buildHTML() {
 });
 
 gulp.task("sass", function() {
-    return gulp.src(["src/components/***/**/*.sass", 'src/pages/**/*.sass', 'src/elements/**/*.sass', 'src/sass/*.sass'])
+    return gulp.src(['src/pages/**/*.sass', 'src/elements/**/*.sass', "src/components/***/**/*.sass", 'src/sass/*.sass'])
         .pipe(concat('styles.sass'))
         .pipe(sass())
         // .pipe(autoprefixer({

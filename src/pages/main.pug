@@ -5,5 +5,9 @@ block content
   include ../components/marks.block/block.pug
   include ../components/maintenance.block/block.pug
   include ../components/offers.block/block.pug
+  +offer_block("Лучшие предложения", "offers_one")
+  +offer_block("Новые объявления", "offers_two")
+  +offer_block("Только на AURAUTO", "offers_three")
+  +offer_block("Самые популярные", "offers_four", " авто")
   include ../components/advantages.block/block.pug
   include ../components/partners.block/block.pug
